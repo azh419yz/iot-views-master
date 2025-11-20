@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-dataroom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-dataroom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-framework/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-framework/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-generator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-quartz/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-quartz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/swiot-system/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

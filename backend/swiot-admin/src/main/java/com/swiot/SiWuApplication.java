@@ -1,0 +1,26 @@
+package com.swiot;
+
+import com.baomidou.mybatisplus.core.MybatisConfiguration;
+import com.baomidou.mybatisplus.core.metadata.TableInfoHelper;
+import com.gccloud.common.constant.CommonConst;
+import com.gccloud.dataroom.core.constant.DataRoomConst;
+import com.gccloud.dataroom.core.module.basic.entity.PageEntity;
+import com.gccloud.dataset.constant.DatasetConstant;
+import org.apache.ibatis.builder.MapperBuilderAssistant;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+
+/**
+ * 启动程序
+ */
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = {"com.swiot", "com.gccloud", DataRoomConst.ScanPackage.COMPONENT, DatasetConstant.ScanPackage.COMPONENT, CommonConst.ScanPackage.COMPONENT})
+@MapperScan(value = {DataRoomConst.ScanPackage.DAO, DatasetConstant.ScanPackage.DAO})
+public class SiWuApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(SiWuApplication.class, args);
+        System.out.println("(♥◠‿◠)ﾉﾞ  application is running in http://localhost:9712   ლ(´ڡ`ლ)ﾞ");
+        TableInfoHelper.initTableInfo(new MapperBuilderAssistant(new MybatisConfiguration(), ""), PageEntity.class);
+    }
+}
