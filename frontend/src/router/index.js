@@ -65,21 +65,34 @@ export const constantRoutes = [
     path: '/401',
     component: () => import('@/views/error/401'),
     hidden: true
-  }, 
-    {
+  },
+  {
+    path: '/monitor/websocket',
+    component: Layout,
+    redirect: 'noRedirect',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/monitor/websocket/index'),
+        name: 'WebSocket',
+        meta: { title: 'WebSocket Test', icon: 'message' }
+      }
+    ]
+  },
+  {
     path: '',
     component: Layout,
     redirect: 'index',
-    hidden: true ,   
+    hidden: true,
     children: [
       {
         path: 'index',
         component: () => import('data-room-ui/BigScreenMag'),
         name: 'Index',
-        meta: { title: '项目管理', icon: 'dashboard' ,breadcrumb: false }
+        meta: { title: '项目管理', icon: 'dashboard', breadcrumb: false }
       }
     ]
-  },  
+  },
   {
     path: '',
     component: Layout,
@@ -89,10 +102,10 @@ export const constantRoutes = [
         path: 'big-screen-list',
         component: () => import('data-room-ui/BigScreenMag'),
         name: 'list',
-        meta: { title: '项目管理', icon: 'clipboard',breadcrumb: false  }
+        meta: { title: '项目管理', icon: 'clipboard', breadcrumb: false }
       }
     ]
-  },    
+  },
   {
     path: '',
     component: Layout,
@@ -102,10 +115,10 @@ export const constantRoutes = [
         path: 'big-screen-source',
         component: () => import('data-room-ui/SourceManagement'),
         name: 'source',
-        meta: { title: '素材管理', icon: 'table'}
+        meta: { title: '素材管理', icon: 'table' }
       }
     ]
-  },    
+  },
   {
     path: '',
     component: Layout,
@@ -118,7 +131,7 @@ export const constantRoutes = [
         meta: { title: '组件开发', icon: 'zip' }
       }
     ]
-  }, 
+  },
   {
     path: '/data',
     component: Layout,
@@ -187,9 +200,9 @@ export const constantRoutes = [
   {
     path: '/user',
     component: Layout,
-    hidden: true,  
+    hidden: true,
     redirect: 'noredirect',
-    children: [ 
+    children: [
       {
         path: 'profile',
         component: () => import('@/views/system/user/profile/index'),

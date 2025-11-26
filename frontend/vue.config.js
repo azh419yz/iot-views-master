@@ -20,12 +20,12 @@ module.exports = {
   productionSourceMap: false,
   transpileDependencies: ['quill', '@antv/*'],
   devServer: {
-    host: "0.0.0.0",
+    host: "127.0.0.1",
     port: port,
     open: true,
     proxy: {
       [process.env.VUE_APP_BASE_API]: {
-        target: `http://localhost:9712`,
+        target: `http://127.0.0.1:9712`,
         changeOrigin: true,
         pathRewrite: {
           ["^" + process.env.VUE_APP_BASE_API]: "",

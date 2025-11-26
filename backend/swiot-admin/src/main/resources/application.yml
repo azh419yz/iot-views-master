@@ -138,11 +138,3 @@ xss:
   excludes: /system/notice
   # 匹配链接
   urlPatterns: /system/*,/monitor/*,/tool/*
-
-mqtt:
-  broker-url: tcp://127.0.0.1:1883
-  client-id: local-client
-  username: mqtt-user
-  password: 123456
-  default-topic: test/topic
-
