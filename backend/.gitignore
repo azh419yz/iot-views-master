@@ -36,6 +36,7 @@ target/
 **/node_modules
 
 logs/
+swiot-logs/
 
 # ignore test.
 *.wav
